@@ -6,6 +6,7 @@ window.onload = () => {
         element.addEventListener("mouseover", (e) => {
             const newSource = e.target.dataset.src;
             heroImage.src = "/img/" + newSource + ".jpg";
+            heroImage.alt = newSource;
             console.log("Hello")
         })
     })
